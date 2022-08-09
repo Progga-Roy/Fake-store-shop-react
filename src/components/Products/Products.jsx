@@ -3,7 +3,7 @@ import { useState } from 'react';
 import Product from '../Product/Product';
 import './products.css'
 
-const Products = () => {
+const Products = ({handleAddToCart}) => {
     const [products, setProducts] = useState([])
     useEffect(()=>{
 
@@ -17,7 +17,7 @@ const Products = () => {
             <h2>All Products</h2>
           <div className='row'>
           {
-            products.map(product => <Product product={product} key={product.id}></Product>)
+            products.map(product => <Product product={product} key={product.id} handleAddToCart={handleAddToCart}></Product>)
            }
           </div>
         </div>
