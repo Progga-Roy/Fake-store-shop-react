@@ -3,7 +3,9 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Menubar from './components/Menubar/Menubar';
 import Products from './components/Products/Products';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
+import Aos from 'aos';
+import "aos/dist/aos.css";
 
 
 function App() {
@@ -11,6 +13,9 @@ function App() {
   const handleAddToCart =()=>{
     setCount(count +1)
   }
+  useEffect(()=>{
+    Aos.init()
+  },[])
   return (
     <div className="App">
     <Menubar count={count}></Menubar>

@@ -3,8 +3,8 @@ import './Menubar.css'
 const Menubar = (props) => {
     const {count} = props;
     return (
-        <div>
-         <div className="container">
+        <div >
+         <div className="container position-sticky top-0">
         <div className="row">
         <div className='col-md-2'>
          LoGo

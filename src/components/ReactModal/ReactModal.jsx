@@ -18,7 +18,7 @@ const ReactModal = (props) => {
       <Modal show={show} onHide={handleClose}>
         <Modal.Header closeButton>
             <img className='w-50' src={image} alt="" srcset="" /> <br />
-          <Modal.Title>{title.slice(0,10)}</Modal.Title>
+          <Modal.Title>{title}</Modal.Title>
         </Modal.Header>
         <Modal.Body> {description}</Modal.Body>
         <Modal.Footer>

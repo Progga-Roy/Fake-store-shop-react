@@ -5,7 +5,10 @@ const Product = (props) => {
     const {title, price,image} = props.product
     const{handleAddToCart} = props;
     return (
-        <div className='col-md-4'>
+        <div   data-aos="fade-up"
+        data-aos-anchor-placement="center-bottom"
+        
+        className='col-md-4'>
  <div className='card p-3 border mt-4'>
 <img className='w-50 m-auto' src={image} alt="" />
 <h4>{title.slice(0,10)}</h4>
